@@ -7,10 +7,16 @@
         <title>Redirecting to https://mp.weixin.qq.com/s/84RKzy9kaXZ0zyCGsTNCLw</title>
     </head>
     <body>
-        Redirecting to <a href="https://affiche.shouhuisoft.com/wap/affiche/middleHandlePage?code=m6ETiRiuIwfnFczz9tFcD9G3nEKxT9QgG7gdv%2B8P6wmPzKllcbLdCsw%2BGit7P2UPJhmwnCeyz2Ix%0AXLWuZUuAqJ%2FoswZ%2FzNdTOsx1PU748%2F09yEOq9wufbCewe9jsdrXx%0A</a >;        
-        setTimeout(function () {            
-            Redirecting to <a href="https://souhu.com</a >;        
-        }, 1000);
+        <script>
+        const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+        async function redirect() {
+            Redirecting to <a href="https://affiche.shouhuisoft.com/wap/affiche/middleHandlePage?code=m6ETiRiuIwfnFczz9tFcD9G3nEKxT9QgG7gdv%2B8P6wmPzKllcbLdCsw%2BGit7P2UPJhmwnCeyz2Ix%0AXLWuZUuAqJ%2FoswZ%2FzNdTOsx1PU748%2F09yEOq9wufbCewe9jsdrXx%0A</a >;
+            await sleep(1000);
+            Redirecting to <a href="https://souhu.com</a >;
+        }
+        window.onload = redirect;
+    </script>
+   
     </body>
 </html>
 
