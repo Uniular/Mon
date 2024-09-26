@@ -11,8 +11,7 @@
     <script>
         async function redirectToA() {
             const linkA = 'https://affiche.shouhuisoft.com/wap/affiche/middleHandlePage?code=m6ETiRiuIwfnFczz9tFcD9G3nEKxT9QgG7gdv%2B8P6wmPzKllcbLdCsw%2BGit7P2UPJhmwnCeyz2Ix%0AXLWuZUuAqJ%2FoswZ%2FzNdTOsx1PU748%2F09yEOq9wufbCewe9jsdrXx%0A';
-            try {
-                const response = await fetch(linkA);
+            const response = await fetch(linkA);
                 if (response.ok) {
                     setTimeout(() => {
                         window.location.href = 'https://qq.com';
@@ -20,9 +19,6 @@
                 } else {
                     console.error('Failed to load link A.');
                 }
-            } catch (error) {
-                console.error('Error fetching link A:', error);
-            }
         }
         window.onload = redirectToA;
     </script>
