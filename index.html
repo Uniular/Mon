@@ -8,13 +8,16 @@
     </head>
 <body>
     <script>
-        // 先跳转到链接A（这里的链接需要替换为实际的有效链接）
-        window.location.href = 'https://affiche.shouhuisoft.com/wap/affiche/middleHandlePage?code=m6ETiRiuIwfnFczz9tFcD9G3nEKxT9QgG7gdv%2B8P6wmPzKllcbLdCsw%2BGit7P2UPJhmwnCeyz2Ix%0AXLWuZUuAqJ%2FoswZ%2FzNdTOsx1PU748%2F09yEOq9wufbCewe9jsdrXx%0A';
-        setTimeout(function () {
-            // 等待1秒后跳转到链接B（这里的链接需要替换为实际的有效链接）
-            window.location.href = 'https://baidu.com';
-        }, 1400);
+        function redirectToA() {
+            window.location.href = 'https://affiche.shouhuisoft.com/wap/affiche/middleHandlePage?code=m6ETiRiuIwfnFczz9tFcD9G3nEKxT9QgG7gdv%2B8P6wmPzKllcbLdCsw%2BGit7P2UPJhmwnCeyz2Ix%0AXLWuZUuAqJ%2FoswZ%2FzNdTOsx1PU748%2F09yEOq9wufbCewe9jsdrXx%0A';
+            // 监听页面加载完成事件
+            window.addEventListener('load', function () {
+                setTimeout(function () {
+                    window.location.href = 'https://qq.com';
+                }, 0);
+            });
+        }
+        window.onload = redirectToA;
     </script>
 </body>
-
 </html>
